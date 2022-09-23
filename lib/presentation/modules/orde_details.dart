@@ -1,6 +1,6 @@
-import 'package:admingp/presentation/widgets/custom_button.dart';
-import 'package:admingp/presentation/widgets/oreder_item.dart';
-import 'package:admingp/shared/constants/colors.dart';
+import 'package:ecommerce/presentation/widgets/custom_button.dart';
+import 'package:ecommerce/presentation/widgets/oreder_item.dart';
+import 'package:ecommerce/shared/constants/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../domain/cubit/orders/order_cubit.dart';

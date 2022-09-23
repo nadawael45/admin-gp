@@ -5,5 +5,7 @@ class LoadingDropDown extends DropDownStates{}
 class ChangeVal extends DropDownStates{}
 class GetDropCategorySuccess extends DropDownStates{}
 class GetDropCategoryFailed extends DropDownStates{}
+class GetCategoryId extends DropDownStates{}
+
 
 

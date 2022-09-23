@@ -1,8 +1,8 @@
-import 'package:admingp/domain/cubit/product/product_cubit.dart';
-import 'package:admingp/presentation/modules/add_category.dart';
-import 'package:admingp/presentation/modules/add_menu.dart';
-import 'package:admingp/presentation/widgets/custom_button.dart';
-import 'package:admingp/shared/constants/colors.dart';
+import 'package:ecommerce/domain/cubit/product/product_cubit.dart';
+import 'package:ecommerce/presentation/modules/add_category.dart';
+import 'package:ecommerce/presentation/modules/add_menu.dart';
+import 'package:ecommerce/presentation/widgets/custom_button.dart';
+import 'package:ecommerce/shared/constants/colors.dart';
 import 'package:flutter/material.dart';
 import '../widgets/custom_container.dart';
 class Add extends StatelessWidget {

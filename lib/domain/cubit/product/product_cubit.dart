@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'dart:io';
-import 'package:admingp/data/models/product.dart';
-import 'package:admingp/domain/cubit/product/product_states.dart';
-import 'package:admingp/presentation/dialoges/toast.dart';
+import 'package:ecommerce/data/models/product.dart';
+import 'package:ecommerce/domain/cubit/product/product_states.dart';
+import 'package:ecommerce/presentation/dialoges/toast.dart';
 import 'package:bloc/bloc.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';

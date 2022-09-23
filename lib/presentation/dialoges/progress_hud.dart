@@ -1,6 +1,6 @@
-import 'package:admingp/shared/constants/colors.dart';
 import 'package:flutter/material.dart';
 
+import '../../shared/constants/colors.dart';
 import '../widgets/custom_text.dart';
 class HudWidget extends StatelessWidget {
   const HudWidget({

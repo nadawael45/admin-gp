@@ -1,6 +1,6 @@
-import 'package:admingp/domain/cubit/orders/order_cubit.dart';
-import 'package:admingp/domain/cubit/orders/order_states.dart';
-import 'package:admingp/presentation/widgets/oreder_item.dart';
+import 'package:ecommerce/domain/cubit/orders/order_cubit.dart';
+import 'package:ecommerce/domain/cubit/orders/order_states.dart';
+import 'package:ecommerce/presentation/widgets/oreder_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 class PastOrders extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'package:admingp/shared/constants/colors.dart';
+import 'package:ecommerce/shared/constants/colors.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_button.dart';

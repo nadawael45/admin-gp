@@ -58,6 +58,7 @@ dependencies:
   jiffy:
   flutter_facebook_auth:
   intl:
+  animated_text_kit:
   geocoding:
   firebase_messaging:
   firebase_core:
@@ -109,11 +110,7 @@ flutter:
         - asset: assets/fonts/Cairo/Cairo-Bold.ttf
           weight: 700
 
-    - family: PlayfairDisplay
-      fonts:
-        - asset: assets/fonts/PlayfairDisplay/PlayfairDisplay-Black.ttf
-        - asset: assets/fonts/PlayfairDisplay/PlayfairDisplay-Black.ttf
-          weight: 700
+
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
   #   - family: Trajan Pro

@@ -1,9 +1,9 @@
-import 'package:admingp/data/models/category.dart';
-import 'package:admingp/domain/cubit/pregress_hud/progress_cubit.dart';
-import 'package:admingp/presentation/widgets/custom_button.dart';
-import 'package:admingp/presentation/widgets/custom_text.dart';
-import 'package:admingp/presentation/widgets/custom_textformfield.dart';
-import 'package:admingp/shared/constants/validator.dart';
+import 'package:ecommerce/data/models/category.dart';
+import 'package:ecommerce/domain/cubit/pregress_hud/progress_cubit.dart';
+import 'package:ecommerce/presentation/widgets/custom_button.dart';
+import 'package:ecommerce/presentation/widgets/custom_text.dart';
+import 'package:ecommerce/presentation/widgets/custom_textformfield.dart';
+import 'package:ecommerce/shared/constants/validator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sizer/sizer.dart';

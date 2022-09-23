@@ -1,6 +1,6 @@
 import 'dart:async';
-import 'package:admingp/domain/cubit/dropdown/dropdown_states.dart';
-import 'package:admingp/presentation/dialoges/toast.dart';
+import 'package:ecommerce/domain/cubit/dropdown/dropdown_states.dart';
+import 'package:ecommerce/presentation/dialoges/toast.dart';
 import 'package:bloc/bloc.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -21,6 +21,7 @@ FirebaseAuth auth=FirebaseAuth.instance;
 
   List? categoryList ;
   var dropDownValue;
+  var categoryId;
 
   getCategory() {
     emit((LoadingDropDown()));
@@ -45,6 +46,27 @@ FirebaseAuth auth=FirebaseAuth.instance;
   changeVal(val){
     dropDownValue=val;
     emit(ChangeVal());
+    getCategoryId(val);
+
+  }
+  getCategoryId(val){
+  print('iddddddd');
+  print(val);
+     FirebaseFirestore firestore = FirebaseFirestore.instance;
+     firestore.collection('categories').where('name',isEqualTo: val).snapshots().listen((event) {
+       print('ffffffffffffffffffffff');
+       print(event.docs.length);
+       event.docs.forEach((element) {
+         categoryId=element.id;
+         emit(GetCategoryId());
+         print('iddddddd');
+         print(element.id);
+         print(element['id']);
+
+
+       });
+       print(categoryId);
+     });
 
   }
 

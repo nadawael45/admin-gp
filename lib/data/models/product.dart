@@ -1,10 +1,11 @@
 class ProductModel{
-   String? name , description , image , id , brand , categoryName;
+   String? name , description , image , id , brand , categoryName,categoryId;
   late int price , discount ;
   double rating = 0 ;
    bool? isFav;
   ProductModel({
      this.id ,
+    this.categoryId,
     required this.name ,
     required this.description ,
     required this.image ,
@@ -24,7 +25,9 @@ class ProductModel{
     discount = json["discount"] ;
     brand = json["brand"] ;
     categoryName = json["categoryName"] ;
-   // rating = json["rating"];
+    //rating = json["rating"];
+    categoryId = json["categoryId"];
+
   }
   toJson(){
     return {
@@ -37,6 +40,7 @@ class ProductModel{
       "brand" : brand ,
       "categoryName" : categoryName ,
       "rating" : rating ,
+      "categoryId":categoryId
     };
   }
 }

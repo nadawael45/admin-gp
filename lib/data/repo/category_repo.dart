@@ -10,8 +10,10 @@ class CategoryRepo{
     return firestore.collection('categories').snapshots().map((event)  {
       final List <String> categoryList=[];
 
+
       for(var element in  event.docs){
         categoryList.add(element['name']);
+
 
       }
       return categoryList;

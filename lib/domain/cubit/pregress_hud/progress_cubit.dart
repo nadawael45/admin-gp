@@ -1,4 +1,4 @@
-import 'package:admingp/domain/cubit/pregress_hud/progress_states.dart';
+import 'package:ecommerce/domain/cubit/pregress_hud/progress_states.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 

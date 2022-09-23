@@ -1,7 +1,7 @@
 import 'dart:async';
-import 'package:admingp/data/models/order_user_information.dart';
-import 'package:admingp/data/repo/order_repo.dart';
-import 'package:admingp/domain/cubit/orders/order_states.dart';
+import 'package:ecommerce/data/models/order_user_information.dart';
+import 'package:ecommerce/data/repo/order_repo.dart';
+import 'package:ecommerce/domain/cubit/orders/order_states.dart';
 import 'package:bloc/bloc.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';

@@ -1,13 +1,13 @@
-import 'package:admingp/domain/cubit/dropdown/dropdown_cubit.dart';
-import 'package:admingp/domain/cubit/email_passweord/email_password_cubit.dart';
-import 'package:admingp/domain/cubit/orders/order_cubit.dart';
-import 'package:admingp/domain/cubit/product/product_cubit.dart';
-import 'package:admingp/presentation/modules/home.dart';
-import 'package:admingp/presentation/modules/login.dart';
+import 'package:ecommerce/domain/cubit/email_passweord/email_password_cubit.dart';
+import 'package:ecommerce/domain/cubit/orders/order_cubit.dart';
+import 'package:ecommerce/domain/cubit/product/product_cubit.dart';
+import 'package:ecommerce/presentation/modules/home.dart';
+import 'package:ecommerce/presentation/modules/login.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sizer/sizer.dart';
+import 'domain/cubit/dropdown/dropdown_cubit.dart';
 import 'domain/cubit/pregress_hud/progress_cubit.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 void main() async {
@@ -38,9 +38,12 @@ class MyApp extends StatelessWidget {
           title: 'Flutter Demo',
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
+            fontFamily: 'Cairo',
             primarySwatch: Colors.blue,
+
           ),
-          home: isSigned == true? Home() :  LogInScreen(),
+
+          home: isSigned == true? const Home() :  const LogInScreen(),
         ),
       ),
     );

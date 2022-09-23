@@ -1,5 +1,5 @@
-import 'package:admingp/domain/cubit/dropdown/dropdown_cubit.dart';
-import 'package:admingp/domain/cubit/dropdown/dropdown_states.dart';
+import 'package:ecommerce/domain/cubit/dropdown/dropdown_cubit.dart';
+import 'package:ecommerce/domain/cubit/dropdown/dropdown_states.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

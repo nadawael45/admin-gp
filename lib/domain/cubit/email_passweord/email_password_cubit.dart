@@ -19,10 +19,17 @@ class EmailPasswordCubit extends Cubit<EmailPasswordStatus>{
     }
     else{
       try {
-        await firebaseFireStore.collection("admin").where("userName" , isEqualTo: email).where("password" , isEqualTo: pass).get().then((value) async {
-          SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
-          await sharedPreferences.setBool("signed", true);
-          emit(EmailLoginSuccess());
+        await firebaseFireStore.collection("admin").where("userName" , isEqualTo: email).where("password" , isEqualTo: pass).get()
+            .then((value) async {
+              if(value.docs.length==0||value.docs.length==null){
+                emit(EmailLoginFailed(msg: 'No user found'));
+
+              }else{
+                SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+                await sharedPreferences.setBool("signed", true);
+                emit(EmailLoginSuccess());
+              }
+
         });
       } on FirebaseAuthException catch (e) {
         if (e.code == 'user-not-found') {

@@ -1,11 +1,11 @@
-import 'package:admingp/data/models/product.dart';
-import 'package:admingp/domain/cubit/dropdown/dropdown_cubit.dart';
-import 'package:admingp/domain/cubit/product/product_cubit.dart';
-import 'package:admingp/presentation/dialoges/toast.dart';
-import 'package:admingp/presentation/widgets/custom_button.dart';
-import 'package:admingp/presentation/widgets/custom_textformfield.dart';
-import 'package:admingp/presentation/widgets/dropdown.dart';
-import 'package:admingp/shared/constants/validator.dart';
+import 'package:ecommerce/data/models/product.dart';
+import 'package:ecommerce/domain/cubit/dropdown/dropdown_cubit.dart';
+import 'package:ecommerce/domain/cubit/product/product_cubit.dart';
+import 'package:ecommerce/presentation/dialoges/toast.dart';
+import 'package:ecommerce/presentation/widgets/custom_button.dart';
+import 'package:ecommerce/presentation/widgets/custom_textformfield.dart';
+import 'package:ecommerce/presentation/widgets/dropdown.dart';
+import 'package:ecommerce/shared/constants/validator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:sizer/sizer.dart';
@@ -90,10 +90,13 @@ GlobalKey<FormState> keyform = GlobalKey<FormState>();
                     }
                     if(state is AddImgDone){
                       print('droooooooooooooooooooooop');
+                      print(DropDownCubit.get(context).categoryId);
+
                       print(DropDownCubit.get(context).dropDownValue);
                       ProductCubit.get(context).addProduct(
                           ProductModel(
                             rating: 3.5,
+                            categoryId: DropDownCubit.get(context).categoryId,
                             categoryName: DropDownCubit.get(context).dropDownValue,
                               name: controllerName.text,
                             price:int.parse(controllerprice.text),
@@ -101,6 +104,7 @@ GlobalKey<FormState> keyform = GlobalKey<FormState>();
                             brand: controllerbrand.text,
                             discount: int.parse(controllerdiscount.text),
                             image: ProductCubit.get(context).imageUrl,
+
                           ),
 
 

@@ -1,10 +1,10 @@
-import 'package:admingp/domain/cubit/orders/order_cubit.dart';
-import 'package:admingp/presentation/modules/orde_details.dart';
-import 'package:admingp/presentation/widgets/custom_badge.dart';
-import 'package:admingp/presentation/widgets/custom_button.dart';
-import 'package:admingp/presentation/widgets/custom_text.dart';
-import 'package:admingp/shared/constants/colors.dart';
-import 'package:admingp/shared/constants/images.dart';
+import 'package:ecommerce/domain/cubit/orders/order_cubit.dart';
+import 'package:ecommerce/presentation/modules/orde_details.dart';
+import 'package:ecommerce/presentation/widgets/custom_badge.dart';
+import 'package:ecommerce/presentation/widgets/custom_button.dart';
+import 'package:ecommerce/presentation/widgets/custom_text.dart';
+import 'package:ecommerce/shared/constants/colors.dart';
+import 'package:ecommerce/shared/constants/images.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 

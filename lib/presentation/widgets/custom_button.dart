@@ -1,8 +1,8 @@
-import 'package:admingp/presentation/widgets/custom_text.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
 import '../../shared/constants/colors.dart';
+import 'custom_text.dart';
 class CustomButton extends StatelessWidget {
   String? text;
   var function;
